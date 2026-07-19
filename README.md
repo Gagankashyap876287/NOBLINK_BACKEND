@@ -443,12 +443,6 @@ Ping path:  sensor_pings -> VisitService -> AlertService -> event logs
 Read path:  query/analytics services -> aggregations / filters
 ```
 
-Alert rules are loaded from MongoDB at generation time. The `condition`
-field selects an evaluator (`visit_duration_minutes_gt`, `event_type_is`,
-`night_visits_count_gt`, `quiet_gap_minutes_gt`, `no_heartbeat_minutes_gt`).
-
----
-
 ## Tests
 
 Install `requirements-dev.txt`, then run pytest against the `tests/` package.
