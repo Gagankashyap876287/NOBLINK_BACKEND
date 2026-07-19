@@ -1,0 +1,9 @@
+Workflow_Name,Step_Name,Step_Order,Max_Response_Hours,Requires_Note,Auto_Escalate
+Standard Care,Initial Triage,1,2,No,Yes
+Standard Care,Caregiver Contact,2,4,Yes,Yes
+Standard Care,Escalation Review,3,3,Yes,No
+Standard Care,Welfare Check,4,6,Yes,Yes
+Standard Care,Closed,5,0,No,No
+Critical Response,Immediate Review,1,1,No,Yes
+Critical Response,Dispatch,2,2,Yes,Yes
+Critical Response,Closed,3,0,No,No

@@ -1,0 +1,11 @@
+Sensor_ID,Resident,Room,Zone,Facility,Region,Workflow
+SEN-BR-01,R. Naidoo,Bathroom 1,bathroom,Sunrise Manor,Western Cape,Standard Care
+SEN-BR-02,M. Okoye,Ensuite,bathroom,Cedar Court,Gauteng,Standard Care
+SEN-RM-03,J. Fourie,Bedroom,bedroom,Sunrise Manor,KwaZulu-Natal,Critical Response
+SEN-BR-04,A. Dlamini,Bathroom 2,bathroom,Oak Ridge,Western Cape,Standard Care
+SEN-BR-05,L. Petersen,Bathroom 1,bathroom,Cedar Court,Gauteng,Standard Care
+SEN-RM-06,S. Botha,Bedroom,bedroom,Oak Ridge,Western Cape,Critical Response
+SEN-BR-07,T. Mokoena,Ensuite,bathroom,Sunrise Manor,Western Cape,Standard Care
+SEN-BR-08,N. Abrahams,Bathroom 3,bathroom,Cedar Court,Gauteng,Standard Care
+SEN-RM-09,P. van Wyk,Bedroom,bedroom,Sunrise Manor,KwaZulu-Natal,Critical Response
+SEN-BR-10,K. Govender,Bathroom 1,bathroom,Oak Ridge,Western Cape,Standard Care

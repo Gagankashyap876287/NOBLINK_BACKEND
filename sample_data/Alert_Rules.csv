@@ -1,0 +1,6 @@
+Rule_ID,Alert_Type,Description,Applies_To_Zone,Condition,Threshold,Base_Severity
+R1,PBO,Prolonged Bathroom Occupancy,bathroom,visit_duration_minutes_gt,20,80
+R2,NMD,No Motion Detected,any,quiet_gap_minutes_gt,180,45
+R3,FRQ,Frequent Night Visits,bathroom,night_visits_count_gt,3,40
+R4,FALL,Suspected Fall,any,event_type_is,fall_suspected,95
+R5,OFFL,Sensor Offline,any,no_heartbeat_minutes_gt,60,10

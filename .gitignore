@@ -1,0 +1,41 @@
+# Python envs
+venv/
+.env
+.env.* 
+.venv/
+
+# Bytecode & caches
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# Test / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Databases / local data
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Large files
+*.zip
+*.tar.gz
