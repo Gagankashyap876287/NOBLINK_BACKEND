@@ -1,4 +1,4 @@
-# Noblink Backend - API & assumptions
+# Noblink Backend 
 
 Base URL: `http://127.0.0.1:8000/api/v1`  
 Interactive docs: http://127.0.0.1:8000/docs
