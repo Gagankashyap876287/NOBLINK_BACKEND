@@ -142,10 +142,8 @@ class VisitService:
         }
 
     def _close_visit(self, visit: dict) -> dict:
-        # Auto-exit at the inactivity boundary after the last activity ping.
-        visit["exitTime"] = visit["lastPingTime"] + timedelta(
-            minutes=VISIT_INACTIVITY_MINUTES
-        )
+
+        visit["exitTime"] = visit["lastPingTime"] 
         elapsed_seconds = (visit["exitTime"] - visit["entryTime"]).total_seconds()
         visit["durationMinutes"] = max(0.0, round(elapsed_seconds / 60, 2))
         visit["autoExited"] = True
