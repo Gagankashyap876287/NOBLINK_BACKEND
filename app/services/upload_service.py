@@ -53,7 +53,7 @@ class UploadService:
 
         documents = []
         for index, row in enumerate(rows, start=2):
-            # CSV has "R. Naidoo" — model expects {"name": "R. Naidoo"}
+           
             if row.get("resident") is not None and not isinstance(
                 row["resident"], dict
             ):
@@ -76,7 +76,7 @@ class UploadService:
 
         documents = []
         for index, row in enumerate(rows, start=2):
-            # pandas may leave numbers as int/float
+            
             if row.get("threshold") is not None:
                 row["threshold"] = str(row["threshold"])
             if row.get("baseSeverity") is not None:
@@ -233,11 +233,6 @@ class SensorPingUploadService:
                 "visitsGenerated": 0,
                 "alertsGenerated": 0,
             }
-
-        # Rebuild derived state so re-uploads with new pings stay idempotent
-        await Collections.alert_event_logs().delete_many({})
-        await Collections.alerts().delete_many({})
-        await Collections.visits().delete_many({})
 
         raw_inserted = await self.ping_repository.bulk_upsert(documents)
         visits = await self.visit_service.generate_and_save_visits(documents)
